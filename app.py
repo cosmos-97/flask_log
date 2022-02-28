@@ -9,7 +9,6 @@ async def github():
     response = requests.get(
         "https://api.github.com/repos/Mohammadreza-v/flask_log/pulls"
     )
-
     return jsonify(response.json())
 
 
